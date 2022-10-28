@@ -10,11 +10,12 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: misReglasCors,
                       builder =>
                       {
+                          /*builder.WithOrigins("http://example.com",
+                                              "http://www.contoso.com");*/
                           builder.AllowAnyOrigin()
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                            
-
                       });
 });
 
